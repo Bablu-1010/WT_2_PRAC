@@ -1,0 +1,39 @@
+<!--06.create a web page to check number is palindrom or not.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Number Palindrome Checker</title>
+</head>
+<body>
+    <h2>Number Palindrome Checker</h2>
+
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number">
+    
+ 
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+    
+
+    <p id="result"></p>
+    
+    <script>
+        function checkPalindrome() {
+           
+            let number = document.getElementById("number").value;
+
+            
+            let numberString = number.toString();
+
+            
+            let reversedNumberString = numberString.split('').reverse().join('');
+
+            
+            if (numberString === reversedNumberString) {
+                document.getElementById("result").textContent = "The number is a palindrome.";
+            } else {
+                document.getElementById("result").textContent = "The number is not a palindrome.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!--10.create a web page to use javascript functions.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JavaScript Functions Demo</title>
+</head>
+<body>
+    <h2>JavaScript Functions Demo</h2>
+    
+    <button onclick="sayHello()">Say Hello</button>
+    
+    <p id="output"></p>
+    
+    <script>
+        function sayHello() {
+            let outputElement = document.getElementById("output");
+            
+            outputElement.textContent = "Hello, World!";
+        }
+    </script>
+</body>
+</html>

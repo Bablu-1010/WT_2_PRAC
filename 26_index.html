@@ -1,0 +1,51 @@
+<!--26.create a web page to manupulate html elements using DOM methods and properties.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h2>DOM Manipulation</h2>
+    
+    <!-- Initial paragraph content -->
+    <p id="paragraph">This is a paragraph.</p>
+
+    <!-- Button to manipulate HTML elements -->
+    <button onclick="manipulateElements()">Manipulate Elements</button>
+
+    <script>
+        function manipulateElements() {
+            // Get the paragraph element
+            let paragraph = document.getElementById("paragraph");
+            
+            // Change text content
+            paragraph.textContent = "Paragraph text has been changed.";
+
+            // Change background color
+            paragraph.style.backgroundColor = "#f0f0f0";
+
+            // Change font color
+            paragraph.style.color = "#ff0000";
+
+            // Add a new CSS class
+            paragraph.classList.add("highlight");
+
+            // Create a new element (div)
+            let newDiv = document.createElement("div");
+            newDiv.textContent = "This is a new div element.";
+
+            // Append the new div to the body
+            document.body.appendChild(newDiv);
+        }
+    </script>
+
+    <style>
+        /* CSS class for highlighting */
+        .highlight {
+            font-weight: bold;
+            border: 2px solid #000000;
+            padding: 10px;
+        }
+    </style>
+</body>
+</html>

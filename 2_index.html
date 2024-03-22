@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <h2>Fibonacci Series</h2>
+    <label for="limit">Enter limit:</label>
+    <input type="number" id="limit">
+    <button onclick="generateFibonacci()">Generate Fibonacci Series</button>
+    <p id="fibonacciSeries"></p>
+    
+    <script>
+        function generateFibonacci() {
+            let limit = document.getElementById("limit").value;
+            let first = 0;
+            let second = 1;
+            let fibonacciSeries = "";
+
+            while (first <= limit) {
+                fibonacciSeries += first + ", ";
+                let next = first + second;
+                first = second;
+                second = next;
+            }
+
+            document.getElementById("fibonacciSeries").textContent = "Fibonacci Series: " + fibonacciSeries;
+        }
+    </script>
+</body>
+</html>

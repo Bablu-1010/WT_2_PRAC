@@ -1,0 +1,38 @@
+<!--07.create a web page to demonstrate any five array methods.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Methods Demo</title>
+</head>
+<body>
+    <h2>Array Methods Demo</h2>
+    
+    <p>Original Array: <span id="originalArray"></span></p>
+    <p>Modified Array: <span id="modifiedArray"></span></p>
+
+    <script>
+        // Original array
+        let originalArray = [1, 2, 3, 4, 5];
+        document.getElementById("originalArray").textContent = originalArray;
+
+        // Method 1: push()
+        originalArray.push(6);
+        document.getElementById("modifiedArray").textContent = originalArray + " (After push)";
+
+        // Method 2: pop()
+        originalArray.pop();
+        document.getElementById("modifiedArray").textContent += "<br>" + originalArray + " (After pop)";
+
+        // Method 3: delete
+        delete originalArray[2];
+        document.getElementById("modifiedArray").textContent += "<br>" + originalArray + " (After delete)";
+
+        // Method 4: shift()
+        originalArray.shift();
+        document.getElementById("modifiedArray").textContent += "<br>" + originalArray + " (After shift)";
+
+        // Method 5: length
+        document.getElementById("modifiedArray").textContent += "<br>Length of the array: " + originalArray.length;
+    </script>
+</body>
+</html>

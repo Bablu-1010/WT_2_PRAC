@@ -1,0 +1,26 @@
+<!-- 01.create a web page to calculate factorial of a number. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Factorial Calculator</title>
+</head>
+<body>
+    <h2>Factorial Calculator</h2>
+    <input type="number" id="number" placeholder="Enter a number">
+    <button onclick="Factorial()">Calculate Factorial</button>
+    <p id="result"></p>
+</body>
+
+<script>
+    function Factorial() {
+        let number = document.getElementById("number").value;
+        let factorial = 1;
+
+        for (let i = 2; i <= number; i++) {
+            factorial *= i;
+        }
+
+        document.getElementById("result").innerText = `Factorial: ${factorial}`;
+    }
+</script>
+</html>

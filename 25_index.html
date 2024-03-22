@@ -1,0 +1,55 @@
+<!--25.create a web page to change the css like Background, color ,font size by DOM methods.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change CSS</title>
+    <style>
+        #content {
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Change CSS</h2>
+    
+    <div id="content">
+        This is a sample text. Click the buttons below to change CSS properties.
+    </div>
+
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <button onclick="changeTextColor()">Change Text Color</button>
+    <button onclick="changeFontSize()">Change Font Size</button>
+
+    <script>
+        function changeBackgroundColor() {
+            // Get the content element
+            let content = document.getElementById("content");
+            
+            // Change background color to red
+            content.style.backgroundColor = "#ff0000";
+        }
+
+        function changeTextColor() {
+            // Get the content element
+            let content = document.getElementById("content");
+            
+            // Change text color to blue
+            content.style.color = "#0000ff";
+        }
+
+        function changeFontSize() {
+            // Get the content element
+            let content = document.getElementById("content");
+            
+            // Change font size to 24px
+            content.style.fontSize = "24px";
+        }
+    </script>
+</body>
+</html>

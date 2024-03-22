@@ -1,0 +1,32 @@
+<!--21.create a web page to swapp two numbers.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <label for="num1">Enter First Number: </label>
+<input type="number" id="num1"><br>
+<label for="num2">Enter Second Number: </label>
+<input type="number" id="num2"><br>
+<button onclick="swap()">Submit</button><br>
+<p id="before"></p>
+<p id="after"></p>
+</body>
+<script>
+    function swap(){
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var c;
+
+        document.getElementById("before").innerHTML = "(before) The values of the variables are now "+a+" and "+b;
+        c=a;
+        a=b;
+        b=c;
+        
+        document.getElementById("after").innerHTML = "(After) The values of the variables are now "+a+" and "+b;
+    
+
+    }
+</script>
+</html>

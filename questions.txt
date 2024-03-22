@@ -1,0 +1,27 @@
+01.create a web page to calculate factorial of a number.
+02.create a web page to display fabonicci series.
+03.create a web page to check whether number is prime or not
+04.create a web page to reverse string.
+05.create a web page to check string is palindrom or not.
+06.create a web page to check number is palindrom or not.
+07.create a web page to demonstrate any five array methods.
+08.create a web page to validate form.
+09.create a web page to validate login page.
+10.create a web page to use javascript functions.
+11.create a web page to display sum of even and odd numbers from 1 to 50.
+12.create a web page to display array.
+13.create a web page to dispaly are or objects using for each loop.
+14.create a web page to demonstrate Do Until loops
+15.create a web page to demonstrate for of and for in control statments.
+16.create a web page to display greater number between two numbers.
+17.create a web page to display greatest number among three numbers.
+18.create a web page to display all the even numbers from 50 to 100 using while loop.
+19.create a web page to display all the odd numbers from 199 to 299.
+20.create a web page to  display strudent details like name, roll number, age, course and college name using   array.  
+21.create a web page to swapp two numbers.
+22.create a web page to perform arithmetic operation of onclick event.
+23.create a web page to count the vowels from the string.
+24.create a web page to change the html elements.
+25.create a web page to change the css like Background, color ,font size by DOM methods.
+26.create a web page to manupulate html elements using DOM methods and properties.
+27.create a web page to use push,pop and reverse methods.

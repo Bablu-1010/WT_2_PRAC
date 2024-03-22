@@ -1,0 +1,30 @@
+<!--15.create a web page to demonstrate for of and for in control statments.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>For...Of and For...In Loop Demo</title>
+</head>
+<body>
+    <h2>For...Of and For...In Loop Demo</h2>
+
+    <script>
+        let numbers = [1, 2, 3, 4];
+
+        let outputForOf = "For...Of loop output: ";
+
+        for (let number of numbers) {
+            outputForOf += number + " ";
+        }
+
+        document.write(outputForOf + "<br>");
+
+        let outputForIn = "For...In loop output: ";
+
+        for (let index in numbers) {
+            outputForIn += numbers[index] + " ";
+        }
+
+        document.write(outputForIn);
+    </script>
+</body>
+</html>

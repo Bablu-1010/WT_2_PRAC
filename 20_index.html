@@ -1,0 +1,38 @@
+<!--20.create a web page to  display strudent details like name, roll number, age, course and college name using   array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Details</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    
+    <script>
+        // Array of student details
+        let students = [
+            { name: "Shadab", rollNumber: "69", age: 18, course: "BCA", college: "Sahyog College" },
+            { name: "Abhishkeh", rollNumber: "36", age: 19, course: "BCA", college: "XYZ College" },
+            { name: "Zaid", rollNumber: "33", age: 19, course: "Mathematics", college: "KKSU" }
+        ];
+
+        // Function to display student details
+        function displayStudentDetails() {
+            // Iterate through the students array and display details for each student
+            for (let student of students) {
+                // Construct a string with student details
+                let studentDetails = "Name: " + student.name + "<br>" +
+                                     "Roll Number: " + student.rollNumber + "<br>" +
+                                     "Age: " + student.age + "<br>" +
+                                     "Course: " + student.course + "<br>" +
+                                     "College: " + student.college + "<br><br>";
+
+                // Display the student details in the body of the webpage
+                document.body.innerHTML += studentDetails;
+            }
+        }
+
+        // Call the function to display student details when the page loads
+        window.onload = displayStudentDetails;
+    </script>
+</body>
+</html>

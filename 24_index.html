@@ -1,0 +1,23 @@
+<!--24.create a web page to change the html elements.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change HTML Elements</title>
+</head>
+<body>
+    <h2>Change HTML Elements</h2>
+    
+    <p id="paragraph">Initial content</p>
+    
+    <button onclick="changeContent()">Change Content</button>
+
+    <script>
+        function changeContent() {
+            let paragraph = document.getElementById("paragraph");
+            
+
+            paragraph.textContent = "New content";
+        }
+    </script>
+</body>
+</html>

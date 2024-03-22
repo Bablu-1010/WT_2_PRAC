@@ -1,0 +1,35 @@
+<!--05.create a web page to check string is palindrom or not.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <h2>Palindrome Checker</h2>
+
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString">
+    
+
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+    
+
+    <p id="result"></p>
+    
+    <script>
+        function checkPalindrome() {
+
+            let inputString = document.getElementById("inputString").value.toLowerCase();
+
+
+            let reversedString = inputString.split('').reverse().join('');
+
+            if (inputString === reversedString) {
+                document.getElementById("result").textContent = "The string is a palindrome.";
+            } else {
+                document.getElementById("result").textContent = "The string is not a palindrome.";
+            }
+        }
+    </script>
+</body>
+</html>

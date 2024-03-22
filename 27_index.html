@@ -1,0 +1,49 @@
+<!--27.create a web page to use push,pop and reverse methods.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Methods</title>
+</head>
+<body>
+    <h2>Array Methods</h2>
+
+    <!-- Buttons to perform array operations -->
+    <button onclick="pushElement()">Push Element</button>
+    <button onclick="popElement()">Pop Element</button>
+    <button onclick="reverseArray()">Reverse Array</button>
+    
+    <!-- Paragraph to display array -->
+    <p id="arrayDisplay"></p>
+
+    <script>
+        // Initial array
+        let myArray = [1, 2, 3, 4, 5];
+
+        // Function to display array
+        function displayArray() {
+            document.getElementById("arrayDisplay").textContent = "Array: " + myArray.join(", ");
+        }
+
+        // Function to push an element to the array
+        function pushElement() {
+            myArray.push(6);
+            displayArray();
+        }
+
+        // Function to pop an element from the array
+        function popElement() {
+            myArray.pop();
+            displayArray();
+        }
+
+        // Function to reverse the array
+        function reverseArray() {
+            myArray.reverse();
+            displayArray();
+        }
+
+        // Display the initial array
+        displayArray();
+    </script>
+</body>
+</html>

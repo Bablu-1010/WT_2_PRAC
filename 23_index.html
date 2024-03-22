@@ -1,0 +1,32 @@
+<!--23.create a web page to count the vowels from the string.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Count Vowels</title>
+</head>
+<body>
+    <h2>Count Vowels</h2>
+    
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString"><br>
+    
+    <button onclick="countVowels()">Count Vowels</button>
+    
+    <p id="result"></p>
+
+    <script>
+        function countVowels() {
+            let inputString = document.getElementById("inputString").value.toLowerCase();
+            
+            let vowelCount = 0;
+            
+            for (let i = 0; i < inputString.length; i++) {
+                if (inputString[i] === 'a' || inputString[i] === 'e' || inputString[i] === 'i' || inputString[i] === 'o' || inputString[i] === 'u') {
+                    vowelCount++;
+                }
+            }
+            document.getElementById("result").textContent = "Number of vowels: " + vowelCount;
+        }
+    </script>
+</body>
+</html>
